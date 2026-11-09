@@ -1,0 +1,2 @@
+# cookbook
+The PyMuPDF Cookbook
