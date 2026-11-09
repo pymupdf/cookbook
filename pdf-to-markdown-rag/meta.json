@@ -1,0 +1,9 @@
+{
+  "title": "Convert a PDF to Markdown for RAG",
+  "description": "Turn a PDF into structured Markdown and token-sized chunks ready for embedding, using PyMuPDF locally with no GPU or API key.",
+  "tags": ["Markdown", "RAG", "Chunking"],
+  "level": "Beginner",
+  "author": "Artifex",
+  "publishedAt": "2026-10-21",
+  "updatedAt": "2026-10-21"
+}

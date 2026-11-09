@@ -1,0 +1,9 @@
+{
+  "title": "Ask a PDF and Highlight the Evidence",
+  "description": "Answer questions from a PDF with page citations, verify each quoted passage, and create a copy with the evidence highlighted using PyMuPDF.",
+  "tags": ["AI", "Citations", "PDF"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-06",
+  "updatedAt": "2026-11-06"
+}
