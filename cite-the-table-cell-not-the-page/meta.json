@@ -1,0 +1,9 @@
+{
+  "title": "Cite the Table Cell, Not the Page",
+  "description": "When an AI answer quotes a number from a financial table, point to the exact cell, with its row and column, instead of the whole page.",
+  "tags": ["AI", "Citations", "PDF", "Grounding", "Tables"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-13",
+  "updatedAt": "2026-11-13"
+}

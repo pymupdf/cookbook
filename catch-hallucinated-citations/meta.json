@@ -1,0 +1,9 @@
+{
+  "title": "Catch Hallucinated Citations",
+  "description": "Run every quote an AI answer cites through the source PDF, and count the ones that are not there.",
+  "tags": ["AI", "Citations", "PDF", "Grounding", "Hallucinations"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-13",
+  "updatedAt": "2026-11-13"
+}

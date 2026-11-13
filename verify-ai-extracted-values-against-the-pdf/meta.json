@@ -1,0 +1,9 @@
+{
+  "title": "Verify AI-Extracted Values Against the PDF",
+  "description": "An LLM pulls fields out of an invoice or contract. Before anyone relies on them, check each value against the document and show where it is printed.",
+  "tags": ["AI", "Citations", "PDF", "Grounding", "LLM"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-13",
+  "updatedAt": "2026-11-13"
+}

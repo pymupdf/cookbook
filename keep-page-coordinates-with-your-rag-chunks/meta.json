@@ -1,0 +1,9 @@
+{
+  "title": "Keep Page Coordinates with Your RAG Chunks",
+  "description": "Every chunk in your vector store can remember exactly where it came from in the PDF. PyMuPDF already gives you the coordinates; this article shows how to keep them.",
+  "tags": ["AI", "Citations", "PDF", "Grounding", "RAG"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Build an Evidence Pack for an AI Answer",
+  "description": "Turn an AI answer and its citations into one PDF that a reviewer, an auditor or a customer can check without any other tools.",
+  "tags": ["AI", "Citations", "PDF", "Grounding"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-13",
+  "updatedAt": "2026-11-13"
+}

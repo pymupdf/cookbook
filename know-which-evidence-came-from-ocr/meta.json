@@ -1,0 +1,9 @@
+{
+  "title": "Know Which Evidence Came from OCR",
+  "description": "Not all text in a PDF is equally reliable. Tell born-digital text from OCR text, and flag OCR evidence for review.",
+  "tags": ["AI", "Citations", "PDF", "Grounding", "OCR"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-13",
+  "updatedAt": "2026-11-13"
+}
