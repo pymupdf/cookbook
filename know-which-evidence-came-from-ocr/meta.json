@@ -1,6 +1,7 @@
 {
   "title": "Know Which Evidence Came from OCR",
   "description": "Not all text in a PDF is equally reliable. Tell born-digital text from OCR text, and flag OCR evidence for review.",
+  "blog": "https://pymupdf.io/blog/know-which-evidence-came-from-ocr",
   "tags": ["AI", "Citations", "PDF", "Grounding", "OCR"],
   "level": "Intermediate",
   "author": "Artifex",

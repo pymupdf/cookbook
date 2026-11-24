@@ -1,6 +1,7 @@
 {
   "title": "Verify AI-Extracted Values Against the PDF",
   "description": "An LLM pulls fields out of an invoice or contract. Before anyone relies on them, check each value against the document and show where it is printed.",
+  "blog": "https://pymupdf.io/blog/verify-ai-extracted-values-against-the-pdf",
   "tags": ["AI", "Citations", "PDF", "Grounding", "LLM"],
   "level": "Intermediate",
   "author": "Artifex",

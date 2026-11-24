@@ -1,6 +1,7 @@
 {
   "title": "Chunked Documents with PyMuPDF",
   "description": "Chunk blocks of text with bounding boxes using PyMuPDF.",
+  "blog": "https://pymupdf.io/blog/chunk-pdfs-with-provenance",
   "tags": ["AI", "Citations", "PDF", "Grounding"],
   "level": "Intermediate",
   "author": "Artifex",

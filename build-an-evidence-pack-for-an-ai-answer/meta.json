@@ -1,6 +1,7 @@
 {
   "title": "Build an Evidence Pack for an AI Answer",
   "description": "Turn an AI answer and its citations into one PDF that a reviewer, an auditor or a customer can check without any other tools.",
+  "blog": "https://pymupdf.io/blog/build-an-evidence-pack-for-an-ai-answer",
   "tags": ["AI", "Citations", "PDF", "Grounding"],
   "level": "Intermediate",
   "author": "Artifex",

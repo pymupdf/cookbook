@@ -1,6 +1,7 @@
 {
   "title": "Catch Hallucinated Citations",
   "description": "Run every quote an AI answer cites through the source PDF, and count the ones that are not there.",
+  "blog": "https://pymupdf.io/blog/catch-hallucinated-citations",
   "tags": ["AI", "Citations", "PDF", "Grounding", "Hallucinations"],
   "level": "Intermediate",
   "author": "Artifex",

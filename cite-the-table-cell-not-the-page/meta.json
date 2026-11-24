@@ -1,6 +1,7 @@
 {
   "title": "Cite the Table Cell, Not the Page",
   "description": "When an AI answer quotes a number from a financial table, point to the exact cell, with its row and column, instead of the whole page.",
+  "blog": "https://pymupdf.io/blog/cite-the-table-cell-not-the-page",
   "tags": ["AI", "Citations", "PDF", "Grounding", "Tables"],
   "level": "Intermediate",
   "author": "Artifex",

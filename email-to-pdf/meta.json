@@ -1,6 +1,7 @@
 {
   "title": "Convert an email to a PDF",
   "description": "Turn an email into a PDF document using PyMuPDF.",
+  "blog": null,
   "tags": ["Email", "PDF", "PyMuPDF"],
   "level": "Intermediate",
   "author": "Artifex",

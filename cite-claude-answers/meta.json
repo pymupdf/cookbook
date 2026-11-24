@@ -1,6 +1,7 @@
 {
   "title": "Cite Claude Answers",
   "description": "Sends a PDF to Claude with citations enabled, locates each cited passage on the page with PyMuPDF, highlights it, and exports coordinates for a web viewer.",
+  "blog": "https://pymupdf.io/blog/cite-claude-answers-at-the-exact-spot-in-the-pdf",
   "tags": ["AI", "Citations", "PDF", "Grounding"],
   "level": "Intermediate",
   "author": "Artifex",
