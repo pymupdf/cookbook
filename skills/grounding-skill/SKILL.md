@@ -3,7 +3,7 @@ name: pymupdf-grounding
 description: Ground AI answers in PDF documents with PyMuPDF. Locate cited or quoted text on the page, keep page coordinates with RAG chunks, return exact PDF coordinates, and render evidence snippets or highlighted PDFs. Use when an LLM answer cites a PDF (for example Claude citations with page_location), or when building a RAG pipeline over PDFs that must show, verify or store where each claim comes from.
 license: Skill content MIT. PyMuPDF itself is dual-licensed (AGPL-3.0 or commercial license from Artifex).
 metadata:
-  version: "0.2"
+  version: "0.3"
   requires: "pymupdf>=2.1"
   maintainer: "Artifex Software"
 ---
@@ -14,7 +14,7 @@ Grounding links each claim in an AI answer to the exact place in a source docume
 
 The core result is always **a page number and a rectangle in PDF coordinates**. Images, highlights and web overlays are ways of displaying that result.
 
-This skill grows with the PyMuPDF grounding article series. Version 0.2 covers grounding LLM citations and keeping page coordinates with RAG chunks, for born-digital PDFs.
+This skill grows with the PyMuPDF grounding article series. Version 0.3 covers grounding LLM citations and keeping page coordinates with RAG chunks, for born-digital PDFs.
 
 ## Setup
 
@@ -45,7 +45,7 @@ python scripts/grounding.py report.pdf --quote "Net revenue increased 12%" --pag
 ## Workflow A: ground LLM citations
 
 1. **Get the citations.** With Claude, send the PDF as a `document` block with `"citations": {"enabled": true}`. Each PDF citation has `cited_text`, `document_index`, `start_page_number` (1-based) and `end_page_number` (exclusive). For other models, any quote plus a page hint works: call `locate()` directly.
-2. **Locate each quote.** `locate()` uses `Page.search_for(text, quads=True)`, which is case-insensitive, matches across line breaks and rejoins words hyphenated at line ends. If that finds nothing, it falls back to a word-by-word match that ignores punctuation and case.
+2. **Locate each quote.** `locate()` uses `Page.search_for(text, quads=True)`, which is case-insensitive, matches across line breaks and rejoins words hyphenated at line ends. If that finds nothing, it falls back to a word-by-word match that ignores punctuation and case. Pass `fuzzy=True` (or `--fuzzy` on the command line) to also treat numbers written as digits or words as equal ("14 days" finds "fourteen days", "21" finds "twenty-one", "12%" finds "twelve per cent", "205 million" finds "two hundred and five million").
 3. **Return coordinates.** `to_json()` gives `page_number` (1-based) and `rect` `[x0, y0, x1, y1]` in PDF points. Store this with the answer as the audit record.
 4. **Show the evidence (optional).** Use `snippet()` for chat and review screens, or `highlight()` plus `doc.save(new_path)` for a file reviewers can open anywhere.
 
@@ -82,8 +82,13 @@ The PyMuPDF loaders for LangChain (`langchain-pymupdf4llm`) and LlamaIndex (`Lla
 
 Each article in the series has a runnable notebook in the PyMuPDF cookbook repository.
 
-- Cite Claude's answers at the exact spot in the PDF. [link to be added]
-- Keep page coordinates with your RAG chunks. [link to be added]
+- [Cite Claude's Answers at the Exact Spot in the PDF](https://pymupdf.io/blog/cite-claude-answers-at-the-exact-spot-in-the-pdf): turn Claude citations into page coordinates and highlights
+- [Keep Page Coordinates with Your RAG Chunks](https://pymupdf.io/blog/keep-page-coordinates-with-your-rag-chunks): store page and bounding box with every RAG chunk
+- [Build an Evidence Pack for an AI Answer](https://pymupdf.io/blog/build-an-evidence-pack-for-an-ai-answer): one PDF with the evidence for every claim
+- [Cite the Table Cell, Not the Page](https://pymupdf.io/blog/cite-the-table-cell-not-the-page): ground figures to table cells with row and column labels
+- [Know Which Evidence Came from OCR](https://pymupdf.io/blog/know-which-evidence-came-from-ocr): tell native text from OCR text
+- [Verify AI-Extracted Values Against the PDF](https://pymupdf.io/blog/verify-ai-extracted-values-against-the-pdf): check LLM-extracted invoice and contract fields
+- [Catch Hallucinated Citations](https://pymupdf.io/blog/catch-hallucinated-citations): measure how many cited quotes are not in the source
 
 ## License
 
