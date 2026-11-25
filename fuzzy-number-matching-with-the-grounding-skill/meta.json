@@ -1,0 +1,10 @@
+{
+  "title": "Fuzzy Number Matching with the PyMuPDF Grounding Skill",
+  "description": "Match numbers in AI quotes against their word equivalents in a PDF",
+  "blog": null,
+  "tags": ["AI", "Citations", "PDF", "Grounding"],
+  "level": "Intermediate",
+  "author": "Artifex",
+  "publishedAt": "2026-11-25",
+  "updatedAt": "2026-11-25"
+}
