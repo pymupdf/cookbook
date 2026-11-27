@@ -1,0 +1,8 @@
+field,type,format,editable,choices,current_value,new_value
+Customer.Name.First,text,string,yes,,John,Jane
+Customer.Name.Last,text,string,yes,,Doe,Miller
+Customer.Fullname,text,string,yes,,John Doe,
+Customer.Address.Street,text,string,yes,,123 Birch Street,
+Customer.Address.City,text,string,yes,,Lakeside,
+Customer.WordOfMouth,checkbox,boolean,yes,,Yes,
+Customer.MaritalStatus,radio,string,yes,married|single,married,single
